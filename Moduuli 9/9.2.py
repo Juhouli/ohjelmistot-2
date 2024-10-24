@@ -22,4 +22,3 @@ print(f"Auton nopeus on nyt {auto.nopeus} km/h")
 auto.kiihdyta(-200)
 print("HÄTÄ JARRUTUS!!")
 print(f"Hätäjarrutuksen jälkeinen nopeutesi on {auto.nopeus} km/h")
-

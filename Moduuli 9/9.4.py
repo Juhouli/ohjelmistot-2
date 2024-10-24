@@ -35,6 +35,3 @@ for i in range(0,9):
     print(f"{oliot[i].rekisteritunnus}            {oliot[i].huippunopeus}           {oliot[i].nopeus}     {oliot[i].kuljettumatka}")
 
 print(f"{oliot[9].rekisteritunnus}           {oliot[9].huippunopeus}           {oliot[9].nopeus}     {oliot[9].kuljettumatka}")
-
-
-
