@@ -1,3 +1,4 @@
+from operator import truediv
 from random import randint
 
 class Auto:
@@ -24,11 +25,20 @@ oliot = []
 for i in range(0,10):
     oliot.append(Auto(f"ABC-{a}",randint(100,200,)))
     a = a + 1
+    #tähän auto muuttuja, mikä lisätään sen 10 kertaa listaan
 
 while oliot[0].kuljettumatka < 10000 and oliot[1].kuljettumatka < 10000 and oliot[2].kuljettumatka < 10000 and oliot[3].kuljettumatka < 10000 and oliot[4].kuljettumatka < 10000 and oliot[5].kuljettumatka < 10000 and oliot[6].kuljettumatka < 10000 and oliot[7].kuljettumatka < 10000 and oliot[8].kuljettumatka < 10000 and oliot[9].kuljettumatka < 10000:
     for i in range(0,10):
         oliot[i].kiihdyta(randint(-10, 15))
         oliot[i].kulje(1)
+
+#while not loppu:
+    #for auto in autot:
+        #auto.kiihdyta(randint(-10, 15))
+        #auto.kulje(1)
+        #if auti.kuljettumatka >= 10000:
+            #loppu = true
+            #break
 
 print("Rekisteritunnus  Huippunopeus  Nopeus  Kuljettumatka")
 for i in range(0,9):

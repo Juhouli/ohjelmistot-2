@@ -12,6 +12,11 @@ class Auto:
             self.nopeus = 0
         else:
             self.nopeus = nopeudenmuutos + self.nopeus
+        #self.nopeus += muutos
+        #if self.nopeus > self.huippunopeus:
+            #self.nopeus = self.huippunopeus
+        #if self.nopeus < 0:
+            #self.nopeus = 0
 
 auto = Auto("ABC-123", 142)
 
