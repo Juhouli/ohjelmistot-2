@@ -43,19 +43,17 @@ class Kilpailu:
         self.tunteja_kulunut +=1
         if self.tunteja_kulunut % 10 == 0:
             print(f"Kilpailu on kestänyt {self.tunteja_kulunut} tuntia. Tilannekatsaus:")
-            kisa.tulosta_tilanne()
+            kisa.tulostatilanne()
             print("\n")
 
 
-    def kilpailu_ohi(self):
+    def kilpailuohi(self):
         for auto in self.autot:
             if auto.kuljettumatka >= self.kilpailun_pituus:
-                print("Kilpailu päättyy. Lopputulokset:")
+                print(f"Kilpailu on päättynyt. Kilpailun kesto oli {self.tunteja_kulunut} tuntia. Lopputulokset:")
                 return True
-            else:
-                return False
 
-    def tulosta_tilanne(self):
+    def tulostatilanne(self):
         print("Rekisteritunnus  Huippunopeus  Nopeus  Kuljettumatka")
         autot = self.autot
         if len(autot) < 9:
@@ -78,7 +76,7 @@ kisa = Kilpailu("Suuri romuralli", 8000, osallistujat)
 loppu = False
 while loppu == False:
     kisa.tunti_kuluu()
-    if kisa.kilpailu_ohi()is True:
+    if kisa.kilpailuohi() == True:
         loppu = True
 
-kisa.tulosta_tilanne()
+kisa.tulostatilanne()
