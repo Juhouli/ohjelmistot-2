@@ -69,7 +69,7 @@ class Kilpailu:
 
 osallistujat = []
 for i in range(0,10):
-    osallistujat.append(Auto(f"ABC-{i+1}",randint(100,200,)))
+    osallistujat.append(Auto(f"ABC-{i+1}",randint(100,200)))
 
 kisa = Kilpailu("Suuri romuralli", 8000, osallistujat)
 
